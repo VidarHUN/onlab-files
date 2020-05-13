@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: envoy-service
+spec:
+  selector:
+    app: envoy
+  ports:
+  - protocol: UDP
+    port: 32000
+    targetPort: 5000
+  #type: NodePort
+  #clusterIP: 10.101.42.169

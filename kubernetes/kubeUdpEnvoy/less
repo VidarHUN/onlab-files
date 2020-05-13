@@ -1,0 +1,842 @@
+    1  apt search tilix
+    2  sudo apt install tilix
+    3  sudo update-alternatives --config x-terminal-emulator
+    4  exit
+    5  cd ~/.themes
+    6  cd ~/.themes/
+    7  cd /usr/share/themes
+    8  ls
+    9  sudo cp -r /home/richard/Letöltések/05-Flat-Remix-GTK-Blue-Dark_20191224 /usr/share/themes
+   10  ls
+   11  mv 05-Flat-Remix-GTK-Blue-Dark_20191224 Flat-Remix-GTK-Blue
+   12  sudo mv 05-Flat-Remix-GTK-Blue-Dark_20191224 Flat-Remix-GTK-Blue
+   13  sudo gsettings set org.gnome.desktop.interface gtk-theme "Flat-Remix-GTK-Blue"
+   14  gsettings set org.gnome.desktop.interface gtk-theme "Flat-Remix-GTK-Blue"
+   15  ssh -v
+   16  clear
+   17  cd .ssh
+   18  ls
+   19  clear
+   20  curl -o hakapdock.pem https://pastebin.com/raw/EzgkKK5B
+   21  ls
+   22  clear
+   23  sudo chmod 600 hakapdock.pem
+   24  clear
+   25  ssh -i hakapdock.pem hakap@128.105.146.175
+   26  ssh -v -i hakapdock.pem hakap@128.105.146.175
+   27  clear
+   28  ssh -v -i hakapdock.pem hakap@130.127.132.219
+   29  ssh -i hakapdock.pem hakap@130.127.132.219
+   30  ssh -i .ssh/hakapdock.pem hakap@130.127.132.219
+   31  sudo apt-get install chrome-gnome-shell
+   32  cd Letöltések
+   33  ls
+   34  cd /usr/share/themes
+   35  ls
+   36  sudo rm -f Flat-Remix-GTK-Blue
+   37  sudo rm -rf Flat-Remix-GTK-Blue
+   38  cp /home/richard/Letöltések/05-Flat-Remix-GTK-Blue-Dark_20191224 /usr/share/themes
+   39  cp -r /home/richard/Letöltések/05-Flat-Remix-GTK-Blue-Dark_20191224 /usr/share/themes
+   40  sudo cp -r /home/richard/Letöltések/05-Flat-Remix-GTK-Blue-Dark_20191224 /usr/share/themes
+   41  ls
+   42  gsettings set org.gnome.desktop.interface gtk-theme "Flat-Remix-GTK-Blue"
+   43  sudo add-apt-repository ppa:daniruiz/flat-remix\nsudo apt update\nsudo apt install flat-remix-gtk
+   44  ls
+   45  clear
+   46  ssh -i .ssh/hakapdock.pem hakap@130.127.132.219
+   47  exit
+   48  ssh -i .ssh/hakapdock.pem hakap@130.127.132.219
+   49  sudo add-apt-repository ppa:daniruiz/flat-remix\nsudo apt update\nsudo apt install flat-remix
+   50  ls -l
+   51  ls
+   52  sudo rm -rf Flat-Remix-GTK-Green Flat-Remix-GTK-Green-Dark Flat-Remix-GTK-Green-Darker Flat-Remix-GTK-Green-Darker-Solid Flat-Remix-GTK-Green-Darkest Flat-Remix-GTK-Green-Darkest-NoBorder Flat-Remix-GTK-Green-Darkest-Solid Flat-Remix-GTK-Green-Darkest-Solid-NoBorder Flat-Remix-GTK-Green-Dark-Solid Flat-Remix-GTK-Green-Solid Flat-Remix-GTK-Red Flat-Remix-GTK-Red-Dark Flat-Remix-GTK-Red-Darker Flat-Remix-GTK-Red-Darker-Solid Flat-Remix-GTK-Red-Darkest Flat-Remix-GTK-Red-Darkest-NoBorder Flat-Remix-GTK-Red-Darkest-Solid Flat-Remix-GTK-Red-Darkest-Solid-NoBorder Flat-Remix-GTK-Red-Dark-Solid Flat-Remix-GTK-Red-Solid Flat-Remix-GTK-Yellow Flat-Remix-GTK-Yellow-Dark Flat-Remix-GTK-Yellow-Darker  Flat-Remix-GTK-Yellow-Darker-Solid Flat-Remix-GTK-Yellow-Darkest  Flat-Remix-GTK-Yellow-Darkest-NoBorder Flat-Remix-GTK-Yellow-Darkest-Solid  Flat-Remix-GTK-Yellow-Darkest-Solid-NoBorder Flat-Remix-GTK-Yellow-Dark-Solid Flat-Remix-GTK-Yellow-Solid
+   53  ls
+   54  sudo rm -rf Flat-Remix-GTK-Blue Flat-Remix-GTK-Blue-Darker Flat-Remix-GTK-Blue-Darker-Solid Flat-Remix-GTK-Blue-Darkest Flat-Remix-GTK-Blue-Darkest-NoBorder Flat-Remix-GTK-Blue-Darkest-Solid  Flat-Remix-GTK-Blue-Darkest-Solid-NoBorder Flat-Remix-GTK-Blue-Dark-Solid Flat-Remix-GTK-Blue-Solid
+   55  ls
+   56  rm -rf 05-Flat-Remix-GTK-Blue-Dark_20191224
+   57  sudo rm -rf 05-Flat-Remix-GTK-Blue-Dark_20191224
+   58  clear
+   59  ls
+   60  cd Asztal
+   61  ls
+   62  cd onlab
+   63  ls
+   64  cd kubernetes
+   65  ls
+   66  less envoyDep.yaml
+   67  atom envoyDep.yaml
+   68  ls
+   69  clear
+   70  ls
+   71  cd buildEnvoy
+   72  ls
+   73  atom Dockerfile
+   74  atom envoy.yaml
+   75  clear
+   76  docker build . 
+   77  clear
+   78  sudo docker build 
+   79  sudo docker build .
+   80  docker build -t envoy:v1 .
+   81  sudo docker build -t envoy:v1 .
+   82  clear
+   83  sudo docker build .
+   84  clear
+   85  sudo docker pull envoyproxy/envoy
+   86  sudo docker pull envoyproxy/envoy:v1.14.1
+   87  sudo docker build .
+   88  docker run --rm -d -p 10000:10000 envoyproxy/envoy
+   89  sudo docker run --rm -d -p 10000:10000 envoyproxy/envoy
+   90  sudo docker run --rm -d -p 10000:10000 envoyproxy/envoy:v1.14.1
+   91  docker ps 
+   92  clear
+   93  sudo docker ps
+   94  curl localhost:10000
+   95  clear
+   96  ip a
+   97  minikube start
+   98  ip a
+   99  minikube ssh 
+  100  minikube ip 
+  101  ssh docker@192.168.99.100
+  102  clear
+  103  minikube dashboard
+  104  docker images
+  105  clear
+  106  sudo docker images
+  107  sudo docker rm -f 047a28005384
+  108  sudo docker images rm -f 047a28005384
+  109  sudo docker image rm -f 047a28005384
+  110  sudo docker image rm -f fce289e99eb9
+  111  clear
+  112  sudo docker images
+  113  docker ps -a
+  114  clear
+  115  sudo docker ps -a
+  116  docker rm -f elated_cerf
+  117  sudo docker rm -f elated_cerf
+  118  sudo docker rm -f eager_saha
+  119  sudo docker ps -a 
+  120  clear
+  121  ls
+  122  clear
+  123  sudo docker build .
+  124  clear
+  125  sudo docker run -d --name envoy -p 9901:9901 -p 10000:10000 envoy:v1
+  126  sudo docker run -d --name envoy -p 9901:9901 -p 10000:10000 envoy:v1.14.1
+  127  sudo docker run -d --name envoy -p 9901:9901 -p 10000:10000 envoyproxy/envoy:v1.14.1
+  128  docker ps -a
+  129  clear
+  130  sudo docker ps -a
+  131  sudo docker exec -it envoy -- /bin/bash
+  132  sudo docker exec -it envoy -- /bin/sh
+  133  sudo docker exec -it envoy
+  134  sudo docker exec -it envoy -- /bin
+  135  sudo docker exec -it envoy bash
+  136  clear
+  137  docker ps -a
+  138  sudo docker ps -a
+  139  sudo docker rm -f envoy
+  140  clear
+  141  docker ps -a 
+  142  sudo docker ps -a 
+  143  docker images
+  144  sudo docker images
+  145  sudo docker image rm -f 48da5d142023
+  146  clear
+  147  docker build .  
+  148  sudo docker build . 
+  149  docker ps -a
+  150  sudo docker ps -a 
+  151  sudo rm -f flamboyant_mendel
+  152  ls
+  153  sudo docker rm -f flamboyant_mendel
+  154  sudo docker images
+  155  sudo docker image rm -f 46a3dfe76fb5
+  156  clear
+  157  docker build .
+  158  sudo docker build .
+  159  docker ps -a 
+  160  sudo docker ps -a
+  161  sudo docker run -d --name envoy -p 9901:9901 -p 10000:10000 envoyproxy/envoy:v1.14.1
+  162  sudo docker ps -a
+  163  sudo docker exec -it envoy bash
+  164  sudo docker exec -it envoy bin
+  165  sudo docker exec -it envoy /bin/bash
+  166  sudo docker ps -a
+  167  sudo docker rm -f envoy
+  168  sudo docker images
+  169  sudo docker image rm -f 24f18cbac194
+  170  clear
+  171  docker build .
+  172  sudo docker build .
+  173  clear
+  174  sudo docker ps -a 
+  175  sudo docker images 
+  176  sudo docker image rm -f 3d68e398f371
+  177  clear
+  178  sudo docker build .
+  179  sudo docker images 
+  180  sudo docker tag f0646fda9e64 vidarhun/kubeenvoy
+  181  sudo docker push vidarhun/kubeenvoy
+  182  sudo docker login 
+  183  sudo docker push vidarhun/kubeenvoy
+  184  clear
+  185  cd ..
+  186  ls
+  187  atom envoyDep.yaml
+  188  kubectl apply -f envoyDep.yaml
+  189  kubectl get all 
+  190  kubectl expose deployment envoy-deployment --type=NodePort --port=32000
+  191  clear
+  192  kubectl get all 
+  193  minikube stop
+  194  minikube start
+  195  cd Asztal
+  196  ls
+  197  cd onlab
+  198  cd kubernetes
+  199  clear
+  200  ls 
+  201  clear
+  202  exit
+  203  kubectl get all
+  204  curl 192.168.99.100:32000
+  205  curl 192.168.99.100:10000
+  206  minikube tunnel
+  207  curl 192.168.99.100:10000
+  208  curl 192.168.99.100:32000
+  209  clear
+  210  kubectl get all
+  211  exit
+  212  clear
+  213  kubectl get all 
+  214  kubectl exec -it pod/envoy-deployment-784c9498f9-nqltj -- /bin/bash
+  215  cd Asztal/onlab/kubernetes
+  216  ls
+  217  cd buildEnvoy
+  218  ls
+  219  atom envoy.yaml
+  220  clear
+  221  kubectl get all
+  222  kubectl describe pod/envoy-deployment-784c9498f9-nqltj
+  223  clear
+  224  curl 172.17.0.2:10000
+  225  ping 172.17.0.2
+  226  clear
+  227  ls
+  228  clear
+  229  kubectl get all 
+  230  ping 10.98.184.147
+  231  ping 10.96.0.1
+  232  minikube ssh 
+  233  minikube ip 
+  234  curl 192.168.99.100:10000
+  235  curl 192.168.99.100
+  236  curl 192.168.99.100:32000
+  237  curl 192.168.99.100:31439
+  238  curl 192.168.99.100:443
+  239  minikube tunnel 
+  240  clear
+  241  curl 192.168.99.100:32000
+  242  clear
+  243  kubectl get all
+  244  kubectl delete deployment.apps/envoy-deployment
+  245  watch kubectl get all
+  246  kubectl delete service/envoy-deployment
+  247  clear
+  248  kubectl get all 
+  249  clear
+  250  ls
+  251  kubectl apply -f envoyDep.yaml
+  252  kubectl get all 
+  253  kubectl expose deployment envoy-deployment --type=NodePort --port=32000 --target-port=10000 
+  254  kubectl get all 
+  255  curl 10.98.142.131:32000
+  256  kubectl get all 
+  257  curl 192.168.99.100:32000
+  258  curl 192.168.99.100
+  259  curl 192.168.99.100:10000
+  260  curl 192.168.99.100:31973
+  261  ls
+  262  cd buildEnvoy
+  263  ls
+  264  atom envoy.yaml
+  265  atom envoy_upd.yaml
+  266  kubectl delete deployment.apps/envoy-deployment
+  267  kubectl delete service/envoy-deployment
+  268  clear
+  269  kubectl get all 
+  270  ls
+  271  mkdir udpEnvoy
+  272  mv envoy_upd.yaml udpEnvoy
+  273  ls
+  274  cd udpEnvoy
+  275  ls
+  276  clear
+  277  cd ..
+  278  atom Dockerfile
+  279  cd udpEnvoy
+  280  atom Dockerfile
+  281  docker images
+  282  clear
+  283  sudo docker images
+  284  sudo docker build .
+  285  ls
+  286  sudo docker build .
+  287  clear
+  288  sudo docker images
+  289  sudo docker tag b19b59d5b746 vidarhun/kubeudpenvoy
+  290  sudo docker push vidarhun/kubeudpenvoy
+  291  clear
+  292  cd ..
+  293  ls
+  294  mkdir kubeenvoy 
+  295  mv envoyDep.yaml kubeenvoy
+  296  mkdir kubeUdpEnvoy
+  297  atom kubeenvoy/envoyDep.yaml
+  298  cd kubeUdpEnvoy
+  299  atom envoyUdpDep.yaml
+  300  clear
+  301  ls
+  302  kubectl get all 
+  303  kubectl apply -f envoyUdpDep.yaml
+  304  watch kubectl get all
+  305  kubectl expose deployment envoy-deployment --type=NodePort --port=32000 --target-port=5000 
+  306  kubectl get all 
+  307  curl 192.168.99.100:31973clear
+  308  clear
+  309  cd ..
+  310  cd 
+  311  clear
+  312  sudo iperf -s -p 5000 -u
+  313  iperf -u -c 192.168.99.100 -p 32000 -b 10000 -l 100 -i 1 -t 10
+  314  clear
+  315  iperf -u -c 192.168.99.100 -p 31284 -b 10000 -l 100 -i 1 -t 10
+  316  curl 192.168.99.100:31284
+  317  curl 192.168.99.100:32000
+  318  kuebctl exec -it pod/envoy-deployment-55498c86c8-zzzs8 -- /bin/bash
+  319  kubectl exec -it pod/envoy-deployment-55498c86c8-zzzs8 -- /bin/bash
+  320  iperf -u -c 192.168.99.100 -p 31284 -b 10000 -l 100 -i 1 -t 10
+  321  iperf -u -c 192.168.99.100 -p 32000 -b 10000 -l 100 -i 1 -t 10
+  322  clear
+  323  kubectl get all 
+  324  kubectl delete service/envoy-deployment
+  325  kubectl expose deployment envoy-deployment --type=NodePort --protocol=UDP --port=32000 --target-port=5000 
+  326  kubectl get all
+  327  iperf -u -c 192.168.99.100 -p 32000 -b 10000 -l 100 -i 1 -t 10
+  328  iperf -u -c 192.168.99.100 -p 31259 -b 10000 -l 100 -i 1 -t 10
+  329  kubectl exec -it pod/envoy-deployment-55498c86c8-zzzs8 -- /bin/bash
+  330  iperf -u -c 192.168.99.100 -p 31259 -b 10000 -l 100 -i 1 -t 10
+  331  ip a
+  332  tcpdump -i vboxnet0 udp
+  333  sudo tcpdump -i vboxnet0 udp
+  334  iperf -u -c 192.168.99.100 -p 31259 -b 10000 -l 100 -i 1 -t 10
+  335  sudo iperf -s -p 51307 -u
+  336  iperf -u -c 192.168.99.100 -p 31259 -b 10000 -l 100 -i 1 -t 10
+  337  sudo tcpdump -i vboxnet0 udp -Qin
+  338  iperf -u -c 192.168.99.100 -p 31259 -b 10000 -l 100 -i 1 -t 10
+  339  iperf -u -c 192.168.99.100 -p 32000 -b 10000 -l 100 -i 1 -t 10
+  340  iperf -u -c 192.168.99.100 -p 31259 -b 10000 -l 100 -i 1 -t 10
+  341  clear
+  342  sudo iperf -s -p 5000 -u
+  343  curl 192.168.99.100:31259
+  344  ls
+  345  clear
+  346  kubectl get all 
+  347  kubectl delete deployment.apps/envoy-deployment
+  348  kubectl delete service/envoy-deployment
+  349  ls
+  350  cd ..
+  351  ls
+  352  cd buildEnvoy
+  353  clear
+  354  ls
+  355  cd udpEnvoy
+  356  ls
+  357  cd ..
+  358  less envoy_upd.yaml
+  359  cd udpEnvoy
+  360  ls
+  361  less envoy_upd.yaml
+  362  atom envoy_upd.yaml
+  363  clear
+  364  less envoy_upd.yaml
+  365  clear
+  366  ls
+  367  less Dockerfile
+  368  clear
+  369  sudo docker build . 
+  370  sudo docker images
+  371  sudo docker tag vidarhun/kubeupdenvoy
+  372  sudo docker tag 297b4d4aaff5 vidarhun/kubeupdenvoy
+  373  sudo docker push vidarhun/kubeudpenvoy
+  374  ls
+  375  cd ..
+  376  ls
+  377  clear
+  378  cd kubeUdpEnvoy
+  379  clear
+  380  ls
+  381  kubectl apply -f envoyUdpDep.yaml
+  382  kubectl expose deployment envoy-deployment --type=NodePort --protocol=UDP --port=32000 --target-port=5000 
+  383  kubectl get all 
+  384  sudo iperf -s -p 6000 -u 
+  385  iperf -u -c 192.168.99.100 -p 32479 -b 10000 -l 100 -i 1 -t 10
+  386  kubectl exec -it pod/envoy-deployment-55498c86c8-h8499 bash
+  387  clear
+  388  kubectl get all 
+  389  kubectl delete deployment.apps/envoy-deployment service/envoy-deployment
+  390  clear
+  391  sudo docker images
+  392  sudo docker image rm -f b19b59d5b746
+  393  sudo docker image rm -f 297b4d4aaff5
+  394  clear
+  395  cd ..
+  396  ls
+  397  cd buildEnvoy/
+  398  ls
+  399  cd udpEnvoy
+  400  ls
+  401  less Dockerfile
+  402  less envoy_upd.yaml
+  403  sudo docker build .
+  404  sudo docker images
+  405  sudo docker tag ab029c0e8b46 vidarhun/kubeupdenvoy:v1.0
+  406  sudo docker push vidarhun/kubeudpenvoy:v1.0
+  407  sudo docker push vidarhun/kubeudpenvoy
+  408  sudo docker push vidarhun/kubeupdenvoy:v1.0
+  409  clear
+  410  cd ..
+  411  ls
+  412  cd kubeUdpEnvoy
+  413  clear
+  414  ls
+  415  kubectl apply -f envoyUdpDep.yaml
+  416  kubectl expose deployment envoy-deployment --type=NodePort --protocol=UDP --port=32000 --target-port=5000
+  417  clear
+  418  kubectl get all 
+  419  kubectl exec -it pod/envoy-deployment-767c686bcc-rrn2k -- /bin/bash
+  420  kubectl get all
+  421  exit
+  422  iperf -u -c 192.168.99.100 -p 31369 -b 10000 -l 100 -i 1 -t 10
+  423  iperf -u -c 192.168.99.100 -p 31369 -b 100000 -l 100 -i 1 -t 10
+  424  iperf -u -c 192.168.99.100 -p 31369 -b 1000000 -l 100 -i 1 -t 10
+  425  iperf -u -c 192.168.99.100 -p 31369 -b 2000000 -l 100 -i 1 -t 10
+  426  iperf -u -c 192.168.99.100 -p 31369 -b 4000000 -l 100 -i 1 -t 10
+  427  exit
+  428  clear
+  429  exit
+  430  iperf -u -c 192.168.99.100 -p 31369 -b 5000000 -l 100 -i 1 -t 10
+  431  iperf -u -c 192.168.99.100 -p 31369 -b 8000000 -l 100 -i 1 -t 10
+  432  iperf -u -c 192.168.99.100 -p 31369 -b 10000000 -l 100 -i 1 -t 10
+  433  iperf -u -c 192.168.99.100 -p 31369 -b 20000000 -l 100 -i 1 -t 10
+  434  iperf -u -c 192.168.99.100 -p 31369 -b 40000000 -l 100 -i 1 -t 10
+  435  iperf -u -c 192.168.99.100 -p 31369 -b 30000000 -l 100 -i 1 -t 10
+  436  kubectl get all 
+  437  exit
+  438  iperf -u -c 192.168.99.100 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  439  exit
+  440  cd Asztal/onlab
+  441  ls
+  442  cd local
+  443  ls
+  444  less udpLocal.yaml
+  445  ls
+  446  less updLocal.yaml
+  447  clear
+  448  encoy -c udpLocal.yaml 
+  449  envoy -c udpLocal.yaml 
+  450  ls
+  451  clear
+  452  encoy -c updLocal.yaml
+  453  clear
+  454  envoy -c updLocal.yaml
+  455  sudo iperf -s -p 5000 -u   \n
+  456  iperf -u -c 127.0.0.1 -p 4000 -b 10000 -l 100 -i 1 -t 10\n
+  457  iperf -u -c 127.0.0.1 -p 4000 -b 10000000 -l 100 -i 1 -t 10\n
+  458  iperf -u -c 127.0.0.1 -p 4000 -b 100000000 -l 100 -i 1 -t 10\n
+  459  iperf -u -c 127.0.0.1 -p 4000 -b 50000000 -l 100 -i 1 -t 10\n
+  460  iperf -u -c 127.0.0.1 -p 4000 -b 75000000 -l 100 -i 1 -t 10\n
+  461  iperf -u -c 127.0.0.1 -p 4000 -b 62500000 -l 100 -i 1 -t 10\n
+  462  iperf -u -c 127.0.0.1 -p 4000 -b 70000000 -l 100 -i 1 -t 10\n
+  463  iperf -u -c 127.0.0.1 -p 4000 -b 75000000 -l 100 -i 1 -t 10\n
+  464  iperf -u -c 127.0.0.1 -p 4000 -b 72000000 -l 100 -i 1 -t 10\n
+  465  iperf -u -c 127.0.0.1 -p 4000 -b 73000000 -l 100 -i 1 -t 10\n
+  466  iperf -u -c 127.0.0.1 -p 4000 -b 72500000 -l 100 -i 1 -t 10\n
+  467  iperf -u -c 127.0.0.1 -p 4000 -b 72250000 -l 100 -i 1 -t 10\n
+  468  minikube stop 
+  469  ssh -i .ssh/hakapdock.pem hakap@130.127.132.219\n
+  470  exit
+  471  ssh -i .ssh/hakapdock.pem hakap@130.127.132.219\n
+  472  exit
+  473  ssh -i .ssh/hakapdock.pem hakap@130.127.132.219\n
+  474  exit
+  475  clear
+  476  cd Asztal
+  477  clear
+  478  git clone https://github.com/VidarHUN/onlab.git
+  479  cd documentation
+  480  clear
+  481  git clone https://github.com/VidarHUN/onlab.git
+  482  cd onlab
+  483  ls
+  484  miktex
+  485  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889\n
+  486  echo "deb http://miktex.org/download/ubuntu bionic universe" | sudo tee /etc/apt/sources.list.d/miktex.list\n
+  487  sudo apt-get update && sudo apt-get install miktex -y 
+  488  pdflatex template.tex
+  489  evince template.pdf
+  490  exit
+  491  pdflatex template.tex
+  492  cd Asztal
+  493  history >> history.txt
+  494  pdflatex template.tex
+  495  less template.tex
+  496  reboot
+  497  cd Asztal/documentation/onlab
+  498  pdflatex template.tex
+  499  ls
+  500  xelatex template.tex
+  501  sudo rm -rf ~/.miktex\n
+  502  xelatex template.tex
+  503  evinve template.pdf
+  504  evince template.pdf
+  505  evinve template.pdf
+  506  xelatex template.tex
+  507  pdflatex template.tex
+  508  sudo apt-get purge miktex\n
+  509  sudo rm -rf ~/.miktex\n
+  510  sudo apt-get purge miktex\n
+  511  sudo apt-get install miktex
+  512  miktexsetup finish
+  513  sudo miktexsetup --shared=yes finish\n
+  514  initexmf --set-config-value [MPM]AutoInstall=1\n
+  515  pdflatex template.tex
+  516  miktex
+  517  miktexsetup
+  518  pdflatex template.tex
+  519  pdflatex
+  520  cd Asztal/documentation/onlab
+  521  pdflatex template.tex
+  522  pdftex template.tex
+  523  clear
+  524  xelatex template.tex
+  525  pdflatex template.tex
+  526  less /home/richard/.miktex/texmfs/data/miktex/log/pdflatex.log
+  527  sudo rm -rf ~/.miktex\n
+  528  sudo apt-get purge miktex\n
+  529  sudo apt-get install miktex
+  530  miktexsetup finish\n
+  531  sudo miktexsetup --shared=yes finish\n
+  532  pdflatex template.tex
+  533  sudo miktexsetup --shared=yes finish\n
+  534  pdflatex template.tex
+  535  sudo rm -rf ~/.miktex\n
+  536  sudo apt-get purge miktex\n
+  537  sudo apt-get install texlive-full\n\n
+  538  pdflatex template.tex
+  539  evince template.pdf
+  540  atom template.tex
+  541  evince template.pdf
+  542  cd Asztal/documentation/onlab
+  543  clear
+  544  cd Asztal/onlab
+  545  clear
+  546  ls
+  547  cd local
+  548  ls
+  549  pdflatex template.tex
+  550  evince template.pdf 
+  551  pdflatex template.tex
+  552  evince template.pdf 
+  553  clear
+  554  envoy --version
+  555  pdflatex template.tex 
+  556  clear
+  557  pdflatex template.tex
+  558  evince template.pdf
+  559  atom udpLocal.yaml
+  560  ls
+  561  atom updLocal.yaml
+  562  envoy -c udpLocal.yaml 
+  563  clear
+  564  ls 
+  565  envoy -c updLocal.yaml
+  566  sudo iperf -s -p 5000 -u   \n
+  567  iperf -u -c 127.0.0.1 -p 4000 -b 72250000 -l 100 -i 1 -t 10\n
+  568  envoy -c updLocal.yaml
+  569  iperf -u -c 127.0.0.1 -p 4000 -b 72250000 -l 100 -i 1 -t 10\n
+  570  clear
+  571  envoy -c updLocal.yaml
+  572  sudo iperf -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  573  sudo iperf -s -p 5000 -u -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  574  sudo iperf -s -p 5000 -u -e --udp-histogram=200u,100 --realtime   \n
+  575  sudo iperf -s -p 5000 -u --udp-histogram=200u,100 --realtime   \n
+  576  sudo iperf -s -u -p 5000 --udp-histogram=200u,100 --realtime   \n
+  577  iperf -s -e -u --udp-histogram=100u,2000 --realtime\n
+  578  iperf -s -e -u --udp-histogram --realtime\n
+  579  sudo iperf -s --udp-histogram -u 
+  580  iperf -v 
+  581  dpkg 
+  582  dpkg -l 
+  583  clear
+  584  dpkg -l | grep iperf
+  585  sudp apt-get purge iperf
+  586  sudo apt-get purge iperf
+  587  clear
+  588  iperf
+  589  clear
+  590  sudo apt-get update -y 
+  591  sudo apt-get install -y iperf3
+  592  iperf -version 
+  593  iperf --version 
+  594  iperf3 --version 
+  595  clear
+  596  sudo iperf3 -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  597  sudo iperf3 -s -p 5000 -u -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  598  sudo iperf3 -s -p 5000 -u --udp-histogram=200u,100 -i 1 --realtime   \n
+  599  sudo iperf -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  600  dpkg -l | grep iperf
+  601  sudo apt-get purge iperf3
+  602  sudo apt autoremove
+  603  iperf3
+  604  iperf
+  605  apt search iperf
+  606  sudo apt-get update
+  607  apt search iperf
+  608  sudo apt-get install iperf
+  609  iperf
+  610  iperf --help
+  611  sudo iperf -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  612  sudo iperf -s -p 5000 -u -U -e -i 1 --realtime   \n
+  613  iperf -u -c 127.0.0.1 -p 4000 -b 72250000 -l 100 -i 1 -t 10\n
+  614  pdflatex template.tex
+  615  evince template.pdf
+  616  iperf --help
+  617  clear
+  618  sudo iperf -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  619  iperf -u -c 127.0.0.1 -p 4000 -b 72250000 -l 100 -i 1 -t 10\n
+  620  sudo iperf -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  621  iperf -u -c 127.0.0.1 -p 4000 -b 52250000 -l 100 -i 1 -t 10\n
+  622  iperf -u -c 127.0.0.1 -p 4000 -b 42250000 -l 100 -i 1 -t 10\n
+  623  iperf -u -c 127.0.0.1 -p 4000 -b 00000000 -l 100 -i 1 -t 10\n
+  624  iperf -u -c 127.0.0.1 -p 4000 -b 10000000 -l 100 -i 1 -t 10\n
+  625  iperf -u -c 127.0.0.1 -p 4000 -b 1000000 -l 100 -i 1 -t 10\n
+  626  sudo iperf -s -p 5000 -u -U -e --udp-histogram=200u,100 -i 1 --realtime   \n
+  627  sudo iperf -s -p 5000 -u -U -e -i 1 --realtime   \n
+  628  iperf -u -c 127.0.0.1 -p 4000 -b 1000000 -l 100 -i 1 -t 10\n
+  629  nano iperfout.tx
+  630  nano iperfout.txt
+  631  mv iperfout.txt Asztal
+  632  exit
+  633  pdflatex template.tex
+  634  evince template.pdf
+  635  cd Asztal/onlab
+  636  ls
+  637  cd docker
+  638  ls
+  639  atom udpDocker.yaml
+  640  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v /home/richard/Asztal/onlab/docker/udpD
+  641  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \n: 1588774677:0;clear
+  642  docker run --net=host --name=proxy-udp -d \ 
+  643  clear
+  644  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \\nenvoyproxy/envoy:latest 
+  645  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \\nenvoyproxy/envoy:1.14.1 
+  646  sudo docker images
+  647  clear
+  648  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \\nenvoyproxy/envoy:v1.14.1 
+  649  sudo iperf -s -p 5000 -u -U -e -i 1 --realtime   \n
+  650  iperf -u -c 172.17.0.1 -p 4000 -b 1000000 -l 100 -i 1 -t 10\n
+  651  sudo docker ps -a
+  652  sudo docker rm -f proxy-udp
+  653  clear
+  654  sudo docker run --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \\nenvoyproxy/envoy:v1.14.1 
+  655  iperf -u -c 172.17.0.1 -p 4000 -b 1000000 -l 100 -i 1 -t 10\n
+  656  sudo docker ps -a
+  657  sudo docker exec -it proxy-udp -- /bin/bash
+  658  sudo docker rm proxy-udp
+  659  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \\nenvoyproxy/envoy:v1.14.1 
+  660  sudo docker ps -a
+  661  sudo docker exec -it proxy-udp -- /bin/bash
+  662  sudo docker exec -it proxy-udp 
+  663  sudo docker exec -it proxy-udp -- 
+  664  sudo docker exec -it proxy-udp -- bin/bash
+  665  sudo docker exec -it proxy-udp -- /bin/sh
+  666  clear
+  667  sudo docker exec -it proxy-udp -- /bin/sh
+  668  iperf -u -c 172.17.0.1 -p 4000 -b 1000000 -l 100 -i 1 -t 10\n
+  669  sudo docker ps -a
+  670  sudo docker exec -it proxy-udp -- /bin/sh
+  671  sudo docker exec -it proxy-udp -- /bin
+  672  sudo docker exec -it proxy-udp -- cd /etc/envoy/
+  673  sudo docker exec -it proxy-udp -- bash
+  674  sudo docker exec -it proxy-udp bash
+  675  ip a
+  676  clear
+  677  sudo iperf -s -p 5000 -u -U -e -i 1 --realtime   \n
+  678  clear
+  679  sudo docker rm -f proxy-udp
+  680  sudo docker run --net=host --name=proxy-udp -d \\n-p 9901:9901 \\n-p 4000:4000 \\n-v $(pwd)/udpDocker.yaml:/etc/envoy/envoy.yaml \\nenvoyproxy/envoy:v1.14.1 
+  681  iperf -u -c 172.17.0.1 -p 4000 -b 1000000 -l 100 -i 1 -t 10\n
+  682  pdflatex template.tex
+  683  evince template.pdf
+  684  sudo docker images 
+  685  pdflatex template.tex
+  686  evince template.pdf
+  687  pdflatex template.tex
+  688  evince template.pdf
+  689  pdflatex template.tex
+  690  clear
+  691  evince template.pdf
+  692  cd ..
+  693  clear
+  694  cd kubernetes
+  695  ls
+  696  clear
+  697  minikube start 
+  698  clear
+  699  minikube ip 
+  700  pdflatex template.tex
+  701  evince template.pdf
+  702  ls
+  703  cd kube
+  704  cd kubeenvoy
+  705  ls
+  706  less envoyDep.yaml
+  707  cd ..
+  708  clear
+  709  ls 
+  710  cd kubeUdpEnvoy
+  711  ls
+  712  atom envoyUdpDep.yaml
+  713  kubectl get all
+  714  atom envoy_service.yaml 
+  715  clear
+  716  kubectl get all 
+  717  kubectl delete service/envoy-deployment
+  718  clear
+  719  ls
+  720  clear
+  721  kubectl get all 
+  722  ls
+  723  clear
+  724  kubectl apply -f envoy_service.yaml
+  725  ls
+  726  mv envoy_service.yaml envoyService.yaml 
+  727  ls
+  728  atom envoyService.yaml
+  729  rm envoy_service.yaml
+  730  clear
+  731  kubectl apply -f envoyService.yaml
+  732  clear
+  733  kubectl apply -f envoyService.yaml
+  734  clear
+  735  kubectl get all 
+  736  clear
+  737  sudo iperf -s -p 6000 -u 
+  738  iperf -u -c 192.168.99.100 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  739  iperf -u -c 192.168.99.100 -p 30815 -b 30000000 -l 100 -i 1 -t 10
+  740  iperf -u -c 10.101.42.169 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  741  kubectl delete service/envoy-service
+  742  clear
+  743  kubectl get al
+  744  kubectl get all
+  745  clear
+  746  kubectl apply -f envoyS
+  747  kubectl apply -f envoyService.yaml
+  748  kubectl get all 
+  749  iperf -u -c 192.168.99.100 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  750  iperf -u -c 192.168.99.100 -p 31685 -b 30000000 -l 100 -i 1 -t 10
+  751  iperf -u -c 10.101.42.169 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  752  kubectl delete service/envoy-service
+  753  kubectl apply -f envoyService.yaml
+  754  clear
+  755  kubectl get all 
+  756  iperf -u -c 192.168.99.100 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  757  iperf -u -c 10.96.35.246 -p 32000 -b 30000000 -l 100 -i 1 -t 10
+  758  minikube service envoy-service
+  759  minikube service envoy-service --url
+  760  clear
+  761  kubectl get all 
+  762  kubectl delete service/envoy-service
+  763  clear
+  764  ú
+  765  clear
+  766  kubectl expose deployment envoy-deployment --type=NodePort --protocol=UDP --port=32000 --target-port=5000
+  767  clear
+  768  kubectl get all 
+  769  minikube service envoy-deployment 
+  770  pdflatex template.tex
+  771  evince template.pdf
+  772  git add -A 
+  773  git status 
+  774  git remote -c 
+  775  git remote -v
+  776  git commit -m "Therory and some of the solution"
+  777  git config --global user.email "ricsi19981007@gmail.com"
+  778  git config --global user.name "VidarHUN"
+  779  git commit -m "Therory and some of the solution"
+  780  git push 
+  781  minikube stop 
+  782  cd Asztal/documentation/onlab
+  783  ls
+  784  clear
+  785  ls
+  786  atom .gitignore
+  787  git pull 
+  788  clear
+  789  atom 
+  790  atom template.tex
+  791  git add -A 
+  792  git commit -m "test"
+  793  pdflatex template.tex
+  794  clear
+  795  git add -A 
+  796  git commit -m "test\n"
+  797  git push 
+  798  atom .gitignore
+  799  pdflatex template.tex
+  800  clear
+  801  git add -A 
+  802  git commit -m "test" 
+  803  git push 
+  804  git pull 
+  805  clear
+  806  git push 
+  807  clear
+  808  git add -A 
+  809  git commit -m "test" 
+  810  git push 
+  811  git pull 
+  812  git push 
+  813  clear
+  814  atom .gitignore
+  815  git pull 
+  816  git add -A 
+  817  git commit -m "test" 
+  818  pdflatex template.tex
+  819  clear
+  820  git add -A 
+  821  git commit -m "test" 
+  822  clear
+  823  git push 
+  824  clear
+  825  cd Asztal/onlab/kubernetes
+  826  ls
+  827  cd kubeUdpEnvoy
+  828  lls
+  829  ls
+  830  atom envoyUdpDep.yaml
+  831  minikube start
+  832  clear
+  833  kubectl get all
+  834  kubectl delete service/envoy-deployment
+  835  clear
+  836  kubectl get all 
+  837  kubectl expose deployment envoy-deployment --type=NodePort --protocol=UDP --port=32000 --target-port=5000
+  838  kubectl get all
+  839  clear
+  840  kubectl get services
+  841  minikube get services
+  842  clear
